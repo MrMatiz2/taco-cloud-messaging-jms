@@ -1,6 +1,6 @@
 package com.example.tacocloudmessagingjms.services;
 
-import com.example.tacocloudmessagingjms.entities.TacoOrder;
+import com.example.tacocloud.entities.TacoOrder;
 import jakarta.jms.JMSException;
 import jakarta.jms.Message;
 import jakarta.jms.Session;
