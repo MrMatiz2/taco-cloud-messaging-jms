@@ -1,15 +1,17 @@
 package com.example.tacocloudmessagingjms.services;
 
-import com.example.tacocloud.entities.TacoOrder;
+import com.example.tacoclouddomain.entities.TacoOrder;
 import jakarta.jms.JMSException;
 import jakarta.jms.Message;
 import jakarta.jms.Session;
 import org.springframework.jms.core.JmsTemplate;
 import org.springframework.jms.core.MessageCreator;
+import org.springframework.stereotype.Service;
 
+@Service
 public class JmsOrderMessagingService implements OrderMessagingService {
 
-    private JmsTemplate jmsTemplate;
+    private final JmsTemplate jmsTemplate;
 
     public JmsOrderMessagingService(JmsTemplate jmsTemplate) {
         this.jmsTemplate = jmsTemplate;
