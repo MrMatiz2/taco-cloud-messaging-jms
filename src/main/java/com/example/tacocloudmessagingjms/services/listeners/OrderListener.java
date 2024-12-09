@@ -1,7 +1,6 @@
 package com.example.tacocloudmessagingjms.services.listeners;
 
 import com.example.tacoclouddomain.entities.TacoOrder;
-import org.springframework.context.annotation.Profile;
 import org.springframework.jms.annotation.JmsListener;
 import org.springframework.stereotype.Component;
 
